@@ -1,0 +1,116 @@
+.parent {
+  .container {
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    display: flex;
+
+    .chatbot {
+      min-height: 800px;
+      width: 500px;
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .inputOutput {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        height: 100%;
+        background-color: aqua;
+      }
+
+      .searchBar {
+        bottom: 0;
+        position: absolute;
+        margin-top: auto;
+        width: 500px;
+        height: 100px;
+        overflow-y: scroll;
+        scroll-behavior: auto;
+        overflow: hidden;
+        display: flex;
+        gap: 5px;
+        .text {
+          display: flex;
+          flex-basis: auto;
+          flex: 1;
+        }
+
+        .searchButtons {
+          flex-direction: column;
+          margin-left: auto;
+          gap: 5px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          .arrow {
+          }
+          .voiceIcon {
+          }
+        }
+      }
+    }
+  }
+}
+.aiIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.dragon {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+}
+
+.wave {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.modalOpen {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: azure;
+}
+
+
+.user{
+    color:black;
+    display: flex;
+    margin-right: auto;
+    width:250px;
+
+}
+
+
+.system{
+    color:black;
+    display: flex;
+    margin-left: auto;
+    width:250px;
+}
+
+
+.Response{
+  flex-direction: column;
+    display: flex;
+    height: 87%;
+    overflow-y: scroll;
+    position: absolute;
+    width: 500px;
+    position: absolute;
+}
